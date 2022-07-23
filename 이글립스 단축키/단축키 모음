@@ -1,0 +1,46 @@
+
+CMD + SHIFT + R파일 찾기
+CMD + FFind
+CMD + KFind Next
+CMD + SHIFT + BBreak Point Toggle on/off
+CMD + BBUILD ALL
+CMD + F11DEBUG
+ALT + CMD + UPDuplicate Lines
+CMD + SHIFT + KFind Previous
+ALT + CMD + GFind Text In Workspace
+CMD + SHIFT + FFormat
+CMD + ]Forward History
+CMD + ALT + RIGHTForward History
+CMD + [Backward History
+CMD + ALT + LEFTBackward History
+F2Open Attached Javadoc
+CMD + SHIFT + [Split Editor View
+CTRL + .Word Completion
+CMD + SHIFT + WWatch, 선택된 코드를 Expressions View 에 추가.(기본설정 없음, 키 바인딩을 통한 설정.)
+CTRL + SHIFT + SPACEContent Assist(MacOS 기본키와 겹침, 바인딩을 통한 설정.)
+
+ CMD + F6  Next Editor 
+ CMD + F7  Next Views 
+ CMD + F8  Next Perspective 
+
+ CMD + 1  Rename in File or Workspace 
+
+ CMD + T  Quick Hierarchy 
+ CMD + SHIFT + T  Open Type 
+ CTRL + ALT + H  Call Hierarchy 
+
+ CMD + E  Quick Switch Editor 
+
+ CMD + F10  Show View Menu (Break Point, Add Bookmark) 
+ SHIFT + F10  Show Context Menu 
+ SHIFT + CMD + F10  Show the system menu (Tab Close Context Menu) 
+
+ CTRL + ALT + ARROW DOWN / UP  Go to Next Member (Move the caret to the next member of the compilation unit) 
+ CTRL + ALT + H  Open Call Hierarchy 
+ CMD + F12  Active Editor (편집기로 커서를 이동) 
+ F5  Step Into 
+ F6  Step Over 
+ F7  Step Return 
+ F8  Resume 
+ CTRL + CMD + F11  Run Debug
+출처: https://goodyoda.tistory.com/408 [GoodYoda's Story:티스토리]
