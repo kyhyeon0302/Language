@@ -1,1 +1,18 @@
+if (조건식) {
+  //조건식이 참인 문장을 적어야 한다.
+  
+}
 
+
+class ch4_1 {
+	public static void main(String args[]) {
+		int score = 80;
+		
+		if(score > 60 ) {
+			System.out.println("합격입니다. ");
+		}
+	}
+}
+
+// Result
+// 합격입니다.
