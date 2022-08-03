@@ -1,0 +1,56 @@
+//상속은 기존 클래스를 재사용해서 새로운 클래스를 작성하는 것을 말한다.
+//특징1: 자손 클래스는 조상 클래스의 모든 멤버를 상속받게 된다.
+//특징2: 자손 클래스의 멤버 갯수는 조상 클래보다 같거나 많아야 한다.
+
+
+상속과 포함의 예제
+
+//상속을 통해서 원의 좌표 나타내기
+
+//class Mypoint {
+//	int x;
+//	int y;
+//}
+//
+//class Circle extends Mypoint { //상속
+//	int r;
+//}
+//
+//
+//
+//public class Main{
+//	public static void main(String[] args) {
+//		Circle c = new Circle();
+//		c.x = 1;
+//		c.y = 2;
+//		c.r = 3;
+//		
+//		System.out.println("c.x= " + c.x);
+//		System.out.println("c.y= " + c.y);
+//		System.out.println("c.r= " + c.r);
+//	}
+//
+
+//포함을 통해서 원의 좌표 나타내기
+class MyPoint{
+	int x;
+	int y;
+	}
+	
+class Circle { //포함
+	MyPoint p = new MyPoint(); //참보 젼수의 초기화
+	int r;
+	}
+
+public class Main{
+	public static void main(String[] args) {
+		Circle c = new Circle();   //참조 변수의 초기화
+		c.p.x = 1;
+		c.p.y = 2;
+		c.r = 3;
+		
+		System.out.println("c.p.x= " +c.p.x);
+		System.out.println("c.p.y= " +c.p.y);
+		System.out.println("c.r= " +c.r);
+		}
+}
