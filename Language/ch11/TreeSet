@@ -1,0 +1,34 @@
+
+
+TreeSet은 이진 탐색 트리의 자료구조 형태로 데이터를 저장하는 컬렉션의 클래스를 말하는 것이다.
+Set인터페이스를 구현하기 때문에 중복된 데이터의 저장을 허용하지 않고 정렬된 위치에 저장하기 때분에 저장순서 또한 유지하지 않는다.
+
+트리셋의 대표적인 예로는
+
+import java.io.*;
+import java.util.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Set set = new TreeSet();
+		
+		for (int i = 0; set.size() < 6 ; i++) {
+			int num = (int)(Math.random()*45) + 1;
+			set.add(num);
+		}
+		
+		
+		System.out.println(set);
+		
+		
+		
+	}
+}
+
+이때 결과 값은
+
+[8, 11, 16, 28, 43, 45]
+
+출력이 된 것을 볼 수 있다. 이때 이미 정렬이 되어 있기 때문에 오른차순으로 정렬된 것을 알 수 있다.
+
+*남궁성님의 자바의정석 기초편 참조
