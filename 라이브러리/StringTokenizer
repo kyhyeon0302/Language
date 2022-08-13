@@ -1,0 +1,16 @@
+StringTokenizer 클래스를 사용할때는 BufferedReader를 사용할 때이다.
+BufferedReader를 사용하면 입력을 받아들일 때 라인단위로 읽어들이게 된다.
+이때 문자열을 구별하기 위해서 쓰는것이라고 생각하면 된다.
+StringTokenizer를 사용할 때는 3가지 방법이 존재한다.
+
+StringTokenizer 생성자
+1) StringTokenizer st = new StringTokenzier(문자열);
+->이는 띄어쓰기를 기준으로 문자열을 분리하는 것을 말한다.
+
+
+2) StringTokenizer st = new StringTokenizer(문자열, 구분자);
+->이는 구반자를 기준으로 문자열을 분리하는 것을 말한다.
+
+3) StringTokenizer st = new StringTokenizer(문자열, 구분자, true/false);
+->구분자를 기준으로 분리하게 된다면 구분자를 토큰으로 넣는다 true를 넣고
+구분자를 분리된 무낮열 토큰에 포함 안시킨다면 false를 넣는다.
