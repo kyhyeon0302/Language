@@ -1,0 +1,14 @@
+흔히들 파이썬의 개념에서 클래스와 객체는 클래스를 과자 틀을 객체는 틀로 만든 과자로 비유한다.
+
+이때 객체(Object)는 틀로 만든 과자이고
+class는 설계 도면이라고 생각하면 쉽다.
+
+클래스 안에 구현된 함수는 메서드라고 부른다.
+
+예시를 보면
+def setdata(self, first, second): # 1메서드의 매개변수 이때 self는 관례적으로 사용함.
+    self.first = first #2.메서드의 수행문
+    self.second = second #3.메서드의 수행문
+
+#a.setdata(4,2) 에서 a -> self,    4 ->first,  2->second에 반환된다.
+
