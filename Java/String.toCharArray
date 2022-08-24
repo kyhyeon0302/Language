@@ -1,0 +1,7 @@
+String.toCharArray는 
+String(문자열)을 char형 배열로 바꿔주는 것을 말한다.
+
+예를 들어
+
+String sNum = 12345
+char[] cNum = sNum.toCharArray();
