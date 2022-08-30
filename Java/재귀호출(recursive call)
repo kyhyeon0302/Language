@@ -1,0 +1,53 @@
+재귀호출은 메서드 내에서 자기자신을 계속 반복해서 호출하는 것을 말한다.
+흔히 말하는 반복문으로 바꿀 수 있다. 다만 반복문보다 성능이 나쁘다는 특성이 있다.
+재귀호출은 팩토리얼, 제곱, 트리운행 등을 표시할때 사용된다.
+
+팩토리얼을 예시로 들어보자.
+팩토리얼의 함수는 f(n) = n * f(n-1), 단 f(1) = 1
+
+public class Main{
+	public static void main(String[] args) {
+		int result = factorial(10);
+		System.out.println(result);
+	}
+	
+	static int factorial(int n) {
+		int result = 0;
+		if(n==1) 
+			result = 1;
+		
+		else 
+			result = n * factorial(n-1);
+		
+		return result;
+	}
+      
+
+}
+
+
+아래는 제곱의 합을 구하는 예제를 나타낸 것이다.
+
+우선 함수로 표현하면
+f(x, n) = x * f(x, n-1), 단 f(x, 1) = x
+
+public class Main{
+	public static void main(String[] args) {
+		int x = 3;
+		int n = 5;
+		long result = 0;
+		
+		for(int i = 1; i <= n; i++) {
+			result += power(x, i);
+		}
+		System.out.println(result);
+	}
+	static long power(int x, int n) {
+		if(n==1) return x;
+		return x * power(x, n-1);
+	}
+}
+
+결과는 
+3 + 3^2 + 3^3+ 3^4 + 3^5 이기 때문에 
+363
