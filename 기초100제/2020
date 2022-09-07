@@ -1,0 +1,27 @@
+//1020. 주민번호 입력받아 형태 바꿔 출력하기.
+import java.util.*;
+import java.io.*;
+
+
+public class Main{
+	public static void main(String[] args) {
+		
+		//Scanner sc = new Scanner(System.in);
+		//String data = sc.nextLine();
+		
+		try {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String[] data = br.readLine().split("[-]"); //  [.]대신 \\- 도 사용 가능
+		int first = Integer.parseInt(data[0]);
+		int last = Integer.parseInt(data[1]);
+		
+		System.out.printf(String.format("%06d%07d", first, last));
+		
+		}catch(Exception e) {
+			System.out.print(e.getMessage());
+		}
+	}
+}
+	
+// 블로그 https://hyeon0302.tistory.com/18?category=1067316
