@@ -12,7 +12,7 @@ public class Main{
 		int month = Integer.parseInt(data[1]);
 		int day = Integer.parseInt(data[2]);
 		
-		System.out.printf(String.format("%04d, %02d, %02d", year, month, day));
+		System.out.printf(String.format("%04d.%02d.%02d", year, month, day));
 	}
 }
 
