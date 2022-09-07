@@ -1,0 +1,13 @@
+//1018.시간 입력받아그대로 출력하기
+
+import java.util.*;
+import java.io.*;
+
+
+public class Main{
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String time[] = br.readLine().split(":");
+		System.out.println(time[0]+ ":" +time[1]);
+	}
+}
