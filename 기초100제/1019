@@ -1,0 +1,19 @@
+//1019.연월일 입력받아 그대로 출력하기
+
+import java.util.*;
+import java.io.*;
+
+
+public class Main{
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String[] data = br.readLine().split("[.]"); //  [.]대신 \\. 도 사용 가능 
+		int year = Integer.parseInt(data[0]);
+		int month = Integer.parseInt(data[1]);
+		int day = Integer.parseInt(data[2]);
+		
+		System.out.printf(String.format("%04d, %02d, %02d", year, month, day));
+	}
+}
+
+// 
