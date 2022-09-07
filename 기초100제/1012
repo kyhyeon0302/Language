@@ -1,0 +1,13 @@
+
+//1012. 실수 1개 입력받아 그대로 출력하기.
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		float f = Float.parseFloat(br.readLine());
+		String s = String.format("%.6f", f);
+		System.out.println(s);
+	}
+}
