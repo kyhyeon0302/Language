@@ -1,0 +1,13 @@
+//1015. 실수 입력받아 둘째 자리까지 출력하기.
+import java.util.*;
+import java.io.*;
+
+
+public class Main{
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		float x = Float.parseFloat(br.readLine());
+		String str = String.format("%.2f", Math.round(x * 100) / 100.0);
+		System.out.print(str);
+	}
+}
