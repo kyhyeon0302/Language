@@ -1,0 +1,33 @@
+/*
+1025
+입력 : 다섯 자리로 이루어진 1개의 정수를 입력받는다. 출력:각 자리의 숫자를 분리해 한 줄에 하나씩 [ ]속에 넣어 출력한다.
+입력 : 75254 
+출력 : [70000]
+      [5000]
+       [200]
+      [50]
+       [4]
+*/
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String A = sc.next();
+		
+		char[] cha = A.toCharArray();
+		for(int i = 0; i < cha.length; i++ ) {
+			System.out.print("[" + cha[i]);
+			for(int j = cha.length-1; j > i; j-- ) {
+				System.out.print("0");
+				
+			}
+			System.out.print("]\n");
+		
+			
+		}
+					
+	}
+}
