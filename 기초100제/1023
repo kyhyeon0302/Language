@@ -1,0 +1,22 @@
+//1014
+// 실수 1개 입력받아서 부분별로 출력하기
+// 첫 번째 줄에 정수 부분을, 두 번째 줄에 실수 부분을 출력한다.
+// 입력 1.414213
+// 출력 1
+//     414213
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	
+		String[] data = sc.next().split("[.]");
+		int x = Integer.parseInt(data[0]);
+		int y = Integer.parseInt(data[1]);
+		
+		System.out.printf("%d\n%d", x, y);
+					
+	}
+}
