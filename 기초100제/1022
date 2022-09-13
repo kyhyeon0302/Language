@@ -1,0 +1,17 @@
+//1013
+//문장 1개 입력받아 그대로 출력
+//공백에 유의 해야한다.
+// 입력 : Programming is very fun!! 출력: Programming is very fun!!
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String data = sc.nextLine();
+		System.out.println(data);
+					
+	}
+}
