@@ -1,0 +1,24 @@
+//1024
+// 입력 :단어(영어) 하나를 입력받는다. (단, 단어의 길이는 20자 이하이다.)
+// 출력 : 단어의 문자(영어)를 하나씩 나누어 한 줄에 한 개씩 ' '로 묶어서 출력한다.
+// 입력 : Boy
+//'B'
+//'o'
+//'y'
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String A = sc.nextLine();
+		int N = A.length();
+		for(int i = 0; i< N; i++) {
+			System.out.println("'"+A.charAt(i)+"'");
+			
+		}
+					
+	}
+}
