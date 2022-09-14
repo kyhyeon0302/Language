@@ -1,0 +1,23 @@
+/*
+1030 : 정수1개 입력받아 그대로 출력하기3
+입력 : 정수 1개가 입력된다.
+단, 입력되는 정수의 범위는 -9223372036854775808 ~ +9223372036854775807 이다.
+출력 : 입력된 정수를 그대로 출력한다.
+
+입력 -2147483649 출력 -2147483649
+*/
+
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		long A = sc.nextLong();
+		System.out.println(A);
+		
+		
+		
+	}
+}
