@@ -1,0 +1,17 @@
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String time[] = sc.next().split(":");
+		
+		if(time[1].equals("00")) //문자열은 == 대신에 equals 사용해야함.
+			System.out.println("0");
+		
+		else
+			System.out.println(time[1]);
+
+	}
+}
