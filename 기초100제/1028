@@ -1,0 +1,18 @@
+/*
+1028 정수 1개를 입력받아 그대로 출력2 ( 범위가 매우 큼)
+
+입력 2147483648 출력 2147483648
+
+*/
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		long A = sc.nextLong();
+		System.out.println(A);
+	}
+}
