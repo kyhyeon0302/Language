@@ -1,0 +1,17 @@
+/* 1040 정수 1개 입력받아서 부호 바꿔 출력하기
+입력 : -1 출력 : 1
+입력 : 1 출력 : -1
+*/
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		long a = sc.nextLong();
+		System.out.println(a*(-1));
+
+	}
+}
+
