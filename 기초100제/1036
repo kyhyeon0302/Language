@@ -1,0 +1,16 @@
+/* 1036 영문자 1개 입력받아 10진수로 출력하기 
+입력 A 출력 65
+*/
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char word = sc.nextLine().charAt(0); //String으로 저장된 문자열 중 하나만 char으로 변
+		int word2 = (int)word;
+		System.out.println(word2);
+
+	}
+}
