@@ -1,0 +1,17 @@
+/* 1034 8진 정수 1개 입력받아서 10진수 출력하기
+입력 13 출력 11
+*/
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String b = sc.nextLine();
+		int a = Integer.valueOf(b, 8); 
+	//n진수에서 10진수로 바꿀 때 Integer클래스내 .valueO 사용
+		System.out.println(a);
+
+	}
+}
