@@ -1,0 +1,18 @@
+/* 1033 10진 정수 입력받아 16진수로 출력하기2
+입력 255 출력 FF (대문자임을 유의)
+*/
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int A = sc.nextInt();
+		System.out.printf("%X", A); //대문자로 표기.
+
+/*
+%d : 10진수
+%o : 8진수
+%x : 16진수
+*/
