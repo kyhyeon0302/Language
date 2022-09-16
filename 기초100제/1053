@@ -1,0 +1,19 @@
+/* 1053 참 거짓 바꾸기 
+입력 : 정수 1개가 입력된다.(단, 0 또는 1 만 입력된다.) 출력 :입력된 값이 0이면 1, 1이면 0을 출력한다.
+입력 : 1 출력 : 0
+*/
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();		
+		if( a == 0)
+			
+			System.out.println(1);
+		else
+			System.out.println(0);
+	}
+}
