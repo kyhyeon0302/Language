@@ -1,0 +1,18 @@
+/* 1041 문자1개 입력받아서 다음 문자 출력하기
+입력 : A 출력 :B. 입력 :0 출력 : 1
+*/
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char a =  sc.nextLine().charAt(0);
+		int b  = (int)a+1; //다음 문자를 나
+		a=(char)b; // 숫자를 아스키 코드 기반문자로 변환한다.
+		System.out.println(a);
+
+	}
+}
+
