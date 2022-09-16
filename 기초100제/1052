@@ -1,0 +1,21 @@
+/* 1052 두 정수 입력받아 비교하기4
+입력 : 두 정수 a, b가 공백을 두고 입력된다. 출력 :a와 b가 다른 경우 1을, 그렇지 않은 경우 0을 출력한다.
+입력 : 0 1 출력: 1
+*/
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+		if( a != b)
+			
+			System.out.println(1);
+		else
+			System.out.println(0);
+	}
+}
