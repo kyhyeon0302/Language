@@ -1,0 +1,22 @@
+/* 1060 비트단위로 AND하여 출력하기
+입력 : 2개의 정수가 공백을 두고 입력된다. 출력 : 두 정수를 비트단위(bitwise)로 and 계산을 수행한 결과를 10진수로 출력한다.
+입력 3 5 출력 1
+& : 비트 and 연산
+| : 비트 or 연산
+^ : 비트 xor 연산
+~ : 비트 not 연산
+*/
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println(a&b);
+		
+	}
+}
+
