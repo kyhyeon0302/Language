@@ -1,0 +1,30 @@
+/* 1068 정수1개 입력받아 평가 출력하기
+입력 : 정수(0 ~ 100) 1개가 입력된다. 출력 : 평가 결과를 출력한다.
+평가 기준 점수 범위 : 평가  90 ~ 100 : A  70 ~   89 : B  40 ~   69 : C    0 ~   39 : D 로 평가되어야 한다.
+입력 : 73 출력 : B
+*/
+
+import java.util.*;
+import java.io.*;
+
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		
+		if( N >= 90 ) {
+			System.out.println("A");
+			
+		}else if  ( N < 90 && N >= 70) {
+			System.out.println("B");
+			
+		}else if  ( N < 70 && N >= 40) {
+			System.out.println("C");
+
+		}else 
+			
+			System.out.println("D");
+	}
+		
+}
