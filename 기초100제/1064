@@ -1,0 +1,18 @@
+/* 1064 정수 3개 입력받아서 가장 작은 수 출력하기
+입력 : 3개의 정수가 공백으로 구분되어 입력된다. 출력 : 가장 작은 값을 출력한다.
+입력 : 3 -1 5 출력 : -1
+*/
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		
+		System.out.println(c>(a>b ? b:a)? (a>b?b:a):c);
+	}
+}
