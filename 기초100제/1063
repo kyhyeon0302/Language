@@ -1,0 +1,21 @@
+/* 1063 두 정수 입력받아 큰 수 출력하기 ( 3항 연산자 이용)
+입력 : 두 정수가 공백을 두고 입력된다. 출력 : 두 정수 중 큰 값을 10진수로 출력한다.
+입력 123 456 출력 456
+*/
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		/*
+		int c = (a > b) ? a : b ;
+		System.out.println(c);
+		*/
+		
+		System.out.println(a > b ? a : b);
+	}
+}
