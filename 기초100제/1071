@@ -1,0 +1,27 @@
+/* 1071 0입력될 때 까지 무한 출력하기1
+입력 : 정수가 순서대로 입력된다. 출력 :입력된 정수를 줄을 바꿔 하나씩 출력하는데, 0이 입력되면 종료한다.
+입력 7 4 2 3 0 1 5 6 9 10 8
+출력 
+7
+4
+2
+3
+*/
+
+import java.util.*;
+import java.io.*;
+
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		while(true) {
+			int a = sc.nextInt();
+			if(a == 0)
+				break;
+				
+			System.out.println(a);
+		}		
+	}
+}
