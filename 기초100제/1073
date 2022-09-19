@@ -1,0 +1,21 @@
+/* 1073 0이 입력될 때까지 무한 출력하기2*/
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		while(st.hasMoreTokens()) {
+			String s = st.nextToken();
+			if(s.equals("0")) {
+				break;
+				
+			} else {
+				System.out.println(s);
+			}
+					
+		}
+	}
+}
