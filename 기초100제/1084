@@ -1,0 +1,50 @@
+/* 1084 빛 섞어 색 만들기
+입력: 빨녹파(r, g, b) 각 빛의 강약에 따른 가짓수(0 ~ 128))가 공백을 사이에 두고 입력된다. 예를 들어, 3 3 3 은 각 색깔 빛에 대해서 그 강약에 따라 0~2까지 3가지의 색이 있음을 의미한다.
+출력 : 만들 수 있는 rgb 색의 정보를 오름차순(계단을 올라가는 순, 12345... abcde..., 가나다라마...)으로 줄을 바꿔 모두 출력하고, 마지막에 그 개수를 출력한다.
+입력 2 2 2
+출력 
+0 0 0
+0 0 1
+0 1 0
+0 1 1
+1 0 0
+1 0 1
+1 1 0
+1 1 1
+8   */
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		// bw.close() 버퍼스트림을 닫는다. 
+		// bw.flush() 남은 버퍼 스트림을 출력한다.
+		// bw.newLine() 줄 바꿈을 통해 출력한다.
+		// bw.write(int c)
+		// bw.write(char[] cbuf, int off, int len)
+
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int a = Integer.parseInt(st.nextToken());
+		int b = Integer.parseInt(st.nextToken());
+		int c = Integer.parseInt(st.nextToken());
+		/*Scanner sc = new Scanner(System.in); //scanner 시간초
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt(); */
+
+		for(int i=0; i<a; i++) {
+			for(int j=0; j<b; j++) {
+				for(int k=0; k<c; k++) {
+					bw.write(i+" " + j + " " + k + "\n");
+
+				}
+			}
+		}
+		bw.flush(); // 반드시 해줘야함.
+		System.out.println(a*b*c);
+		bw.close(); //반드시 해줘야함.
+
+	}
+}
