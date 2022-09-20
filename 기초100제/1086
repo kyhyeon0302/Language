@@ -1,0 +1,19 @@
+/* 1086 그림 파일 저장용량 계산하기.
+입력 : w, h, b 가 공백을 두고 입력된다. 출력 : 필요한 저장 공간을 MB 단위로 바꾸어 출력한다. 소수점 이하 셋째 자리에서 반올림해 둘째 자리까지 출력한 뒤 MB를 출력한다.
+입력 : 1024 768 24 출력 2.25 MB */
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double w = sc.nextLong();
+		double h = sc.nextLong();
+		double b = sc.nextLong();
+		double result = (w*h*b) / (8 * 1024 * 1024);
+	
+		System.out.printf("%.2f MB", result);
+	}
+}
