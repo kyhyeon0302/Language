@@ -1,0 +1,23 @@
+/* 1085 소리 파일 저장용용량 계산하기.
+입력 : h, b, c, s 가 공백을 두고 입력된다. 출력 : 필요한 저장 공간을 MB 단위로 바꾸어 출력한다.
+입력 : 44100 16 2 10 출력 : 1.7 MB */
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double h = sc.nextLong();
+		double b = sc.nextLong();
+		double c = sc.nextLong();
+		double s = sc.nextLong();
+		double result = (h*b*c*s) / (8 * 1024 * 1024);
+	
+		System.out.printf("%.1f MB", result);
+				
+		
+		
+	}
+}
