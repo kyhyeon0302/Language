@@ -1,0 +1,27 @@
+/* 1087 여기까지! 이제 그만~
+입력 : 언제까지 합을 계산할 지, 정수 1개를 입력받는다. 
+출력 : 1, 2, 3, 4, 5 ... 순서대로 계속 더해가다가, 그 합이 입력된 정수보다 커지거나 같아지는 경우,
+그때까지의 합을 출력한다.
+입력 : 57 출력 : 66 */
+
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		long a = sc.nextLong();
+		long sum = 0;
+		long num = 0;
+		while(true) {
+			num++;
+			sum += num;
+			if(sum >= a)
+				break;
+			
+		
+		}
+		System.out.println(sum);
+	}
+}
