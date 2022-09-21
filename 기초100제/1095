@@ -1,0 +1,24 @@
+/* 1095 이상한 출석 번호 부르기3
+입력 : 번호를 부른 횟수(n, 1 ~ 10000)가 첫 줄에 입력된다. n개의 랜덤 번호(k, 1 ~ 23)가 두 번째 줄에 공백을 사이에 두고 순서대로 입력된다.
+출력 : 출석을 부른 번호 중에 가장 빠른 번호를 1개만 출력한다.
+입력 : 10 
+10 4 2 3 6 6 7 9 8 5  출력 : 2
+
+*/
+import java.util.*;
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args) throws IOException {
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt();
+		int[] arr = new int[N];
+		
+		for(int i=0; i<N; i++) {
+			arr[i] = sc.nextInt();
+			
+		}
+		System.out.println(Arrays.stream(arr).min().getAsInt());
+	}
+}
